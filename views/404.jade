@@ -1,4 +1,14 @@
 extends layout
 
+block stylesheet
+  link(href="/stylesheets/index-style.css", rel="stylesheet")
+
 block content
-  h1 404
+  .row.fill
+    .col-xs-12.outer-center
+      .inner-center
+        h1.text-center#name Page not found.
+        p.text-center Sorry you couldn't find what you were looking for.
+          br
+          | Maybe you can help me find what I'm looking for? Here's my &#20;
+          a(href="/Resume.pdf") Resume

@@ -40,7 +40,7 @@ if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     if(err.status == 404){
-      res.render('404');
+      res.render('404', { title: 'Page not found' });
     }else{
       res.render('error', {
         message: err.message,
@@ -55,7 +55,7 @@ if (app.get('env') === 'development') {
 app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   if(err.status == 404){
-    res.render('404');
+    res.render('404', { title: 'Page not found' });
   }else{
     res.render('error', {
       message: err.message,

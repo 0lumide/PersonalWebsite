@@ -1,0 +1,50 @@
+.outer-center{
+    height: 100%;
+    display:table;
+}
+
+.home{
+    padding-bottom:10vh;
+}
+
+.fill, #top, #about, #contact{
+    height: 100vh;
+}
+
+#about{
+    background: #f5f5f5;
+}
+
+.profile-pic{
+    padding: 20px;
+}
+
+.inline{
+    display: inline;
+}
+
+#about p, #about li{
+    font-size: 1.03em;
+}
+
+.inner-center{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.block{
+    display: block;
+}
+
+.border-left, .border{
+    border-left: 1px solid #a2a2a2;
+}
+
+.border-right, .border{
+    border-right: 1px solid #a2a2a2;
+}
+
+.name{
+    font-family: 'Roboto Slab', serif;
+    padding: 10px;
+}

@@ -1,6 +1,7 @@
 .outer-center{
     height: 100%;
-    position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .home{
@@ -30,10 +31,7 @@
 }
 
 .inner-center{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    align-self: center;
 }
 
 .block{

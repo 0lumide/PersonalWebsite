@@ -3,7 +3,7 @@ extends layout
 block stylesheet
   link(href="/stylesheets/index-style.css", rel="stylesheet")
 block content
-  nav#navbar-main.navbar.navbar-inverse.navbar-fixed-top(style={display: none})
+  nav#navbar-main.navbar.navbar-inverse.navbar-fixed-top(style={display: 'none'})
     .container
       .navbar-header
         button.navbar-toggle.collapsed(type="button", data-toggle="collapse"
@@ -25,41 +25,40 @@ block content
             a(href="#contact") Contact
 
   .container-fluid
-    .row#top.fill
-      .col-xs-12.outer-center.home
-        .inner-center
-          h1.text-center.name Hi, I'm Olumide.
-          //nav-bar comes here
-          .row
-            .col-xs-0.col-sm-2.col-lg-4
-            .col-xs-3.col-sm-2.col-lg-1.border-right
-              a.text-center.block(href="#about") About
-            .col-xs-3.col-sm-2.col-lg-1.border
-              a.text-center.block(href="#projects") Projects
-            .col-xs-3.col-sm-2.col-lg-1.border
-              a.text-center.block(target="_blank" href="/resume") Resume
-            #contact-text.col-xs-3.col-sm-2.col-lg-1.border-left
-              a.text-center.block(href="#contact") Contact me
-            .col-xs-0.col-sm-2.col-lg-4
-    .row#about.fill
+    .row#top.fill.outer-center
+      .col-xs-12.home.inner-center
+        h1.text-center.name Hi, I'm Olumide.
+        //nav-bar comes here
+        .row
+          .col-xs-0.col-sm-2.col-lg-4
+          .col-xs-3.col-sm-2.col-lg-1.border-right
+            a.text-center.block(href="#about") About
+          .col-xs-3.col-sm-2.col-lg-1.border
+            a.text-center.block(href="#projects") Projects
+          .col-xs-3.col-sm-2.col-lg-1.border
+            a.text-center.block(target="_blank" href="/resume") Resume
+          #contact-text.col-xs-3.col-sm-2.col-lg-1.border-left
+            a.text-center.block(href="#contact") Contact me
+          .col-xs-0.col-sm-2.col-lg-4
+    .row#about.fill.outer-center
       .col-xs-2.col-lg-3
-      .col-xs-8.col-lg-6.outer-center
-        .row.outer-center
-          .inner-center
+      .col-xs-8.col-lg-6.inner-center
+        .row
+          div
             .row
               h2.name.text-center About me
             .row
-              .col-sm-4.col-lg-3.outer-center
-                .inner-center
+              .col-sm-4.col-lg-3
+                div
                   img.img-circle.img-responsive.profile-pic(src="/images/Olumide-Awofeso.jpg")
-              .col-sm-8.col-lg-9.outer-center
-                .inner-center
+              .col-sm-8.col-lg-9
+                div
                   p.visible-xs-inline Yes, that's me above. &#20;
                   p.hidden-xs.inline Yes, that's me on the left. &#20;
                   P.inline I'm a very passionate programmer with a lot of
                     | experience with java and Android.
                     | I spend 99% of my free time learning
-                    | new technologies, making an android app, reading books to learn more
+                    | new technologies, making android apps, reading books to learn more
                     | skills and on Netflix.
                     br
                     |In addition to java, I also work with these languages
@@ -74,15 +73,17 @@ block content
                     a(target="_blank" href="http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612")
                       | Design Patterns.
       .col-xs-2.col-lg-3
-    .row#projects.fill
-      .col-xs-12.outer-center
-        .row.inner-center
+    .row#projects.fill.outer-center
+      .col-xs-12.inner-center
+        .row
           h2.text-center.name Projects
-    .row#contact.fill
-      .col-xs-12.outer-center
-        .row.inner-center
+    .row#contact.fill.outer-center
+      .col-xs-12.inner-center
+        .row
           h2.text-center.name Contact me
           p.text-center You can get in touch with me via &#20;
             a(href="mailto:olumide.awofeso+web@gmail.com") email
-            |, or follow me on twitter
-            a(target="_blank", href="//twitter.com/OlumideAwofeso") &#20; @OlumideAwofeso
+            |, follow me on twitter &#20;
+            a(target="_blank", href="//twitter.com/OlumideAwofeso") @OlumideAwofeso
+            |, or fork something from my &#20;
+            a(target="_blank", href="//github.com/0lumide") github

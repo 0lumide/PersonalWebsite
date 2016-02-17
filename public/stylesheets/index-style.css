@@ -7,11 +7,12 @@
     padding-bottom:10vh;
 }
 
-.fill, #top, #about, #contact{
+.fill{
+    padding-top: 70px;
     height: 100vh;
 }
 
-#about{
+#about, #contact{
     background: #f5f5f5;
 }
 

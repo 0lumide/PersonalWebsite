@@ -27,7 +27,7 @@ block content
   .container-fluid
     .row#top.fill.outer-center
       .col-xs-12.home.inner-center
-        h1.text-center.name Hi, I'm Olumide.
+        h1.text-center.roboto Hi, I'm Olumide.
         //nav-bar comes here
         .row
           .col-xs-0.col-sm-2.col-lg-4
@@ -38,49 +38,71 @@ block content
           .col-xs-3.col-sm-2.col-lg-1.border
             a.text-center.block(target="_blank" href="/resume") Resume
           #contact-text.col-xs-3.col-sm-2.col-lg-1.border-left
-            a.text-center.block(href="#contact") Contact me
+            a.text-center.block(href="#contact") Contact
           .col-xs-0.col-sm-2.col-lg-4
     .row#about.fill.outer-center
-      .col-xs-2.col-lg-3
       .col-xs-8.col-lg-6.inner-center
         .row
-          div
-            .row
-              h2.name.text-center About me
-            .row
-              .col-sm-4.col-lg-3
-                div
-                  img.img-circle.img-responsive.profile-pic(src="/images/Olumide-Awofeso.jpg")
-              .col-sm-8.col-lg-9
-                div
-                  p.visible-xs-inline Yes, that's me above. &#20;
-                  p.hidden-xs.inline Yes, that's me on the left. &#20;
-                  P.inline I'm a very passionate programmer with a lot of
-                    | experience with java and Android.
-                    | I spend 99% of my free time learning
-                    | new technologies, making android apps, reading books to learn more
-                    | skills and on Netflix.
-                    br
-                    |In addition to java, I also work with these languages
-                    ul
-                      li C, C++
-                      li php
-                      li node
-                      li html, jade
-                      li python
-                  p Currently I'm learning C# and Universal Windows apps
-                    |and I'm also currently reading &#20;
-                    a(target="_blank" href="http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612")
-                      | Design Patterns.
-      .col-xs-2.col-lg-3
+          h2.roboto.text-center About me
+        .row
+          .col-sm-4.col-lg-3
+            div
+              img.img-circle.img-responsive.profile-pic(src="/images/Olumide-Awofeso.jpg")
+          .col-sm-8.col-lg-9
+            div
+              p.visible-xs-inline Yes, that's me above. &#20;
+              p.hidden-xs.inline Yes, that's me on the left. &#20;
+              P.inline I'm a very passionate programmer with a lot of
+                | experience with java and Android.
+                | I spend 99% of my free time learning
+                | new technologies, making android apps, and reading books to learn more
+                | skills and on Netflix.
+                br
+                |In addition to java, I also work with these languages
+                ul
+                  li C, C++
+                  li php
+                  li node
+                  li html, jade
+                  li python
+              p Currently I'm learning C# and Universal Windows apps
+                |and I'm also currently reading &#20;
+                a(target="_blank" href="http://www.amazon.com/Design-Patterns-Elements-Reusable-Object-Oriented/dp/0201633612")
+                  | Design Patterns.
     .row#projects.fill.outer-center
-      .col-xs-12.inner-center
+      .col-xs-8.col-lg-7.inner-center
         .row
-          h2.text-center.name Projects
+          h2.text-center.roboto Projects
+          h4.text-center.text-muted These are some of the projects I've worked on
+        .row
+          if projects
+            -var index = 1
+            for project in projects
+              .col-xs-12.col-sm-6.col-md-4.col-lg-3
+                .card
+                  .card-block
+                    h4.card-title= project.title
+                    h6.card-subtitle.text-muted= project.description
+                  img.img-responsive(src="#{project.iconImage}").center-block
+                  .card-block
+                    p.card-text= project.details
+                    if project.destinationLink
+                      a(target="_blank" href= project.destinationLink).card-link Try it
+                    if project.github
+                      a(target="_blank" href= project.github).card-link View on github
+              if index % 4 == 0
+                .clearfix.visible-lg-block
+              if index % 3 == 0
+                .clearfix.visible-md-block
+              if index % 2 == 0
+                .clearfix.visible-sm-block
+              -index++
+        p.pull-right.text-muted You can find more on my &#20;
+          a(target="_blank" href="//github.com/0lumide") github
     .row#contact.fill.outer-center
-      .col-xs-12.inner-center
+      .col-xs-8.col-lg-6.inner-center
         .row
-          h2.text-center.name Contact me
+          h2.text-center.roboto Contact me
           p.text-center You can get in touch with me via &#20;
             a(href="mailto:olumide.awofeso+web@gmail.com") email
             |, follow me on twitter &#20;

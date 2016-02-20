@@ -1,12 +1,7 @@
 {
-    "title": "Title",
-    "description": "Description",
-    "details": "Details",
-    "destinationLink": "http://olumideawofeso.com",
+    "title": "Personal Website",
+    "description": "This website",
+    "details": "This website was built with express on node and bootstrap. What makes this website mention worthy is that, the projects section is pulled directly from github",
     "iconImage": "/img/icon.png",
-    "media": [
-        "img/screen1.png",
-        "/img/screen2.png"
-    ],
     "ignore": false
 }

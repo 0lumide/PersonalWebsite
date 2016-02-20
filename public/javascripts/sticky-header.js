@@ -18,9 +18,9 @@ jQuery(document).ready(function($) {
     }
     $window.scroll(function() {
         if ($window.scrollTop() >= distance) {
-            navbar.fadeIn(200);//.removeClass('hidden');
+            navbar.fadeIn(800);//.removeClass('hidden');
         } else {
-            navbar.fadeOut(200);//.addClass('hidden');
+            navbar.fadeOut(800);//.addClass('hidden');
         }
     });
 });

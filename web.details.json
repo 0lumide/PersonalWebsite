@@ -1,0 +1,12 @@
+{
+    "title": "Title",
+    "description": "Description",
+    "details": "Details",
+    "destinationLink": "http://olumideawofeso.com",
+    "iconImage": "/img/icon.png",
+    "media": [
+        "img/screen1.png",
+        "/img/screen2.png"
+    ],
+    "ignore": false
+}

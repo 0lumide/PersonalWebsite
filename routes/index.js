@@ -55,7 +55,11 @@ router.get('/', function(req, res, next) {
         };
         request(options, function (err, response, body) {
           if (!err && response.statusCode == 200) {
-            callback(JSON.parse(body));
+            try{
+              callback(JSON.parse(body));
+            }catch(err){
+              callback();
+            }
           }else
             callback();
         });

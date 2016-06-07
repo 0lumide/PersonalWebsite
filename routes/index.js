@@ -199,4 +199,8 @@ router.get('/', function(req, res, next) {
 router.get('/resume', function(req, res){
   res.render('resume');
 });
+
+router.get('/QAResume', function(req, res){
+  res.render('QAResume');
+});
 module.exports = router;

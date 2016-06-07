@@ -201,6 +201,6 @@ router.get('/resume', function(req, res){
 });
 
 router.get('/QAResume', function(req, res){
-  res.render('QAResume');
+  res.render('qaresume');
 });
 module.exports = router;

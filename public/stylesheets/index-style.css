@@ -52,8 +52,8 @@
     display: inline;
 }
 
-#about p, #about li{
-    font-size: 1.03em;
+#about p, #contact p, #about li{
+    font-size: 1.2em;
 }
 
 .inner-center{

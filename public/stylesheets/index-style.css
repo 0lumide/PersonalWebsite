@@ -64,11 +64,11 @@
     display: block;
 }
 
-.border-left, .border{
+.border-left{
     border-left: 1px solid #a2a2a2;
 }
 
-.border-right, .border{
+.border-right{
     border-right: 1px solid #a2a2a2;
 }
 

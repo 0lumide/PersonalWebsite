@@ -76,7 +76,7 @@
     font-family: 'Roboto Slab', serif;
 }
 
-.external-link{
+.external-link:after{
   content: url(/images/Icon_External_Link.png);
 margin: 0 0 0 5px;
 }

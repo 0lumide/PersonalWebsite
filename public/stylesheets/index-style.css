@@ -76,7 +76,14 @@
     font-family: 'Roboto Slab', serif;
 }
 
+.external-link{
+    padding-right: 15px;
+    display:inline-block;
+}
+
 .external-link:after{
-  content: url(/images/Icon_External_Link.png);
-margin: 0 0 0 5px;
+    content: url(/images/Icon_External_Link.png);
+    margin: 0 -15px 0 0;
+    padding-left: 3px;
+    display:inline-block;
 }
